@@ -37,16 +37,17 @@ const navigation = {
 
 
 const repos = [
-  { name: 'Casper-Circom', description: 'Zero Knowledge: Circom verifier integrated with the Casper Node', href: 'https://github.com/jonas089/casper-circom', icon: github },
-  { name: 'Macro Compiler', description: 'Smart Contract Metadata emitter build with Proc Macros', href: 'https://github.com/jonas089/raptor-abi', icon: github },
-  { name: 'Trike-shield', description: 'Secure communication in Python with Diffie-Hellman and AES', href: 'https://github.com/jonas089/trike-shield', icon: github },
-  { name: 'React-Voting', description: 'Voting App built on the Casper Blockchain with Casper Wallet support', href: 'https://github.com/jonas089/casper-voting-dapp-demo', icon: github },
-  { name: 'ECDSA-Noir', description: 'Input generator for Noir zk circuits that utilize ECDSA (secp256k1) written in Rust', href: 'https://github.com/jonas089/ecdsa-circuit-input-lib', icon: github },
-  { name: 'Merkle Trees', description: 'Efficient Rust Merkle Tree(s) for use in Blockchain systems', href: 'https://github.com/jonas089/thyla-trees/blob/master/merkle-tree/src/tornado.rs', icon: github },
-  { name: 'ECDSA', description: 'Elliptic Curve digital Signatures from scratch in Python', href: 'https://github.com/jonas089/compy-sign', icon: github },
-  { name: 'Inpigritas', description: 'A blockchain transaction network built from scratch in Python (Flask, Pycryptodome)', href: 'https://github.com/jonas089/Inpigritas-2022', icon: github },
-  { name: 'Automated Market Maker', description: 'Automated Market Maker Smart Contracts written in Rust', href: 'https://medium.com/casperblockchain/building-anautomated-market-maker-on-casper-fd35c5fa917e', icon: medium },
-  { name: 'R&D Blog', description: 'Articles on Cryptography, Blockchain and Engineering', href: 'https://medium.com/@jonas_casper', icon: medium },
+  { name: 'Casper-Circom', description: 'Zero Knowledge: Circom verifier integrated with the Casper Node.', href: 'https://github.com/jonas089/casper-circom', icon: github },
+  { name: 'Pos-Rust', description: 'Proof of stake in Rust.', href: 'https://github.com/jonas089/pos-rust', icon: github },
+  { name: 'Macro Compiler', description: 'Smart Contract Metadata emitter build with Proc Macros.', href: 'https://github.com/jonas089/raptor-abi', icon: github },
+  { name: 'Trike-shield', description: 'Secure communication in Python with Diffie-Hellman and AES.', href: 'https://github.com/jonas089/trike-shield', icon: github },
+  { name: 'React-Voting', description: 'Voting App built on the Casper Blockchain with Casper Wallet support.', href: 'https://github.com/jonas089/casper-voting-dapp-demo', icon: github },
+  { name: 'ECDSA-Noir', description: 'Input generator for Noir zk circuits that utilize ECDSA (secp256k1) written in Rust.', href: 'https://github.com/jonas089/ecdsa-circuit-input-lib', icon: github },
+  { name: 'Merkle Trees', description: 'Efficient Rust Merkle Tree(s) for use in Blockchain systems.', href: 'https://github.com/jonas089/thyla-trees/blob/master/merkle-tree/src/tornado.rs', icon: github },
+  { name: 'ECDSA', description: 'Elliptic Curve digital Signatures from scratch in Python.', href: 'https://github.com/jonas089/compy-sign', icon: github },
+  { name: 'Inpigritas', description: 'A blockchain transaction network built from scratch in Python (Flask, Pycryptodome).', href: 'https://github.com/jonas089/Inpigritas-2022', icon: github },
+  { name: 'Automated Market Maker', description: 'Automated Market Maker Smart Contracts written in Rust.', href: 'https://medium.com/casperblockchain/building-anautomated-market-maker-on-casper-fd35c5fa917e', icon: medium },
+  { name: 'R&D Blog', description: 'Articles on Cryptography, Blockchain and Engineering.', href: 'https://medium.com/@jonas_casper', icon: medium },
 ]
 
 class Home extends React.Component {
@@ -54,12 +55,12 @@ class Home extends React.Component {
     return (
       <div>
         <div className=''>
-          <div className="flex flex-col items-center justify-center bg-black ">
+          <div className="flex flex-col items-center justify-center bg-black">
             <h1 className="pb-20 pt-10 flex items-center text-5xl font-bold bg-gradient-to-r from-emerald-500 to-blue-500 text-transparent bg-clip-text">
               Jonas Pauli
               <img src={profile} alt="Profile" className="w-30 h-16 ml-10 rounded-full" />
             </h1>
-            <div className='px-5 flex flex-col items-center justify-center w-full bg-gradient-to-r from-emerald-500 to-blue-500'>
+            <div className='px-5 flex flex-col items-center justify-center w-full flex-auto overflow-hidden rounded-3xl text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 bg-gradient-to-r from-emerald-500 to-blue-500'>
               <br />
               <p className='text-xl font-bold'>Experienced Rust Engineer specialized in Systems & Cryptography Engineering</p>
               <br />
@@ -75,7 +76,7 @@ class Home extends React.Component {
               Work Samples
             </h1>
             <div className='pb-10'>
-              <div className="w-full flex-auto overflow-hidden rounded-3xl text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 bg-gradient-to-r from-emerald-500 to-blue-500">
+              <div className="w-full bg-gradient-to-r from-emerald-500 to-blue-500 rounded-3xl shadow-lg ring-1 ring-gray-900/5 overflow-hidden">
                 <div className="p-4">
                   {repos.map((item) => (
                     <div key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-blue-500">
@@ -97,7 +98,7 @@ class Home extends React.Component {
             <h1 className="pb-10 pt-10 flex items-center text-5xl font-bold bg-gradient-to-r from-emerald-500 to-blue-500 text-transparent bg-clip-text">
               Public Documents
             </h1>
-            <div className='pt-10 py-10 px-5 flex flex-col items-center justify-center w-full bg-gradient-to-r from-emerald-500 to-blue-500'>
+            <div className='pt-10 py-10 px-5 flex flex-col items-center justify-center w-full flex-auto overflow-hidden rounded-3xl text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 bg-gradient-to-r from-emerald-500 to-blue-500'>
               <a className='py-3 px-3 border border-emerald-900 rounded-md hover:bg-blue-500' href="/cv.pdf" download="cv.pdf">Download CV</a> 
             </div>
           </div>
