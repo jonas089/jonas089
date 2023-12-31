@@ -6,6 +6,7 @@ import github from '../assets/github.png';
 import medium from '../assets/medium.png';
 import gmail from '../assets/gmail.svg';
 import linkedin from '../assets/linkedin.png';
+import GitHubProfile from '../services/Github';
 
 const navigation = {
   social: [
@@ -56,51 +57,34 @@ class Home extends React.Component {
       <div>
         <div className=''>
           <div className="flex flex-col items-center justify-center bg-black">
-            <h1 className="pb-20 pt-10 flex items-center text-5xl font-bold bg-gradient-to-r from-emerald-500 to-blue-500 text-transparent bg-clip-text">
+            <h1 className="pb-10 pt-10 flex items-center text-5xl font-bold bg-gradient-to-r from-emerald-500 to-blue-500 text-transparent bg-clip-text">
               Jonas Pauli
-              <img src={profile} alt="Profile" className="w-30 h-16 ml-10 rounded-full" />
+              
             </h1>
-            <div className='px-5 flex flex-col items-center justify-center w-full flex-auto overflow-hidden rounded-3xl text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 bg-gradient-to-r from-emerald-500 to-blue-500'>
+            <div className='px-5 flex flex-col items-center justify-center flex-auto overflow-hidden rounded-3xl text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 bg-gradient-to-r from-emerald-500 to-blue-500 w-3/4'>
               <br />
               <p className='text-xl font-bold'>Experienced Rust Engineer specialized in Systems & Cryptography Engineering</p>
               <br />
               <p>Current occupation: R&D Engineer at Casper Association</p>
               <br />
-              <div className='colo'></div>
-              <div className='flex justify-center w-1/2 py-5'>
+              <div className='flex justify-center w-1/2 pb-5'>
                 <a href='https://github.com/jonas089' className='border border-black text-black rounded-md px-10 py-2 transition-colors duration-300 hover:bg-blue-500 hover:text-black'>Github</a>
                 <a href='https://www.linkedin.com/in/jonas-pauli/' className='ml-4 border border-black text-black rounded-md px-10 py-2 transition-colors duration-300 hover:bg-blue-500 hover:text-black'>LinkedIn</a>
               </div>      
             </div>
+
+
+            <GitHubProfile/>
+
             <h1 className="pb-10 pt-10 flex items-center text-5xl font-bold bg-gradient-to-r from-emerald-500 to-blue-500 text-transparent bg-clip-text">
-              Work Samples
+              Documents
             </h1>
-            <div className='pb-10'>
-              <div className="w-full bg-gradient-to-r from-emerald-500 to-blue-500 rounded-3xl shadow-lg ring-1 ring-gray-900/5 overflow-hidden">
-                <div className="p-4">
-                  {repos.map((item) => (
-                    <div key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-blue-500">
-                      <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg group-hover:bg-blue-500">
-                        <img src={item.icon} className="h-10 w-10 text-white group-hover:text-grey-500 rounded-md" aria-hidden="true" />
-                      </div>
-                      <div>
-                        <a href={item.href} className="font-semibold text-emerald-900">
-                          {item.name}
-                          <span className="absolute inset-0" />
-                        </a>
-                        <p className="mt-1 text-black">{item.description}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+    
+              <div className='flex flex-col items-center justify-center bg-gradient-to-r from-emerald-500 to-blue-500 rounded-lg shadow-md p-4 mb-4 w-3/4'>
+                <a className='py-3 px-3 border border-emerald-900 rounded-md hover:bg-blue-500' href="/cv.pdf" download="cv.pdf">Download CV</a> 
               </div>
-            </div>
-            <h1 className="pb-10 pt-10 flex items-center text-5xl font-bold bg-gradient-to-r from-emerald-500 to-blue-500 text-transparent bg-clip-text">
-              Public Documents
-            </h1>
-            <div className='pt-10 py-10 px-5 flex flex-col items-center justify-center w-full flex-auto overflow-hidden rounded-3xl text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 bg-gradient-to-r from-emerald-500 to-blue-500'>
-              <a className='py-3 px-3 border border-emerald-900 rounded-md hover:bg-blue-500' href="/cv.pdf" download="cv.pdf">Download CV</a> 
-            </div>
+    
+
           </div>
         </div>
 
