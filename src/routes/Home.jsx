@@ -36,7 +36,6 @@ const navigation = {
 
 
 const articles = [
-  { name: 'Automated Market Maker', description: 'Automated Market Maker Smart Contracts written in Rust.', href: 'https://medium.com/casperblockchain/building-anautomated-market-maker-on-casper-fd35c5fa917e', icon: medium },
   { name: 'R&D Blog', description: 'Articles on Cryptography, Blockchain and Engineering.', href: 'https://medium.com/@jonas_casper', icon: medium },
 ]
 
