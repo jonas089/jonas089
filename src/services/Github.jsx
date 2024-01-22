@@ -34,12 +34,12 @@ const GitHubProfile = () => {
             .catch(error => {
                 console.log(error);
             });
-        axios.get('https://api.github.com/users/jonas089/repos')
+        axios.get('https://api.github.com/users/jonas089/repos?per_page=60')
             .then(response => {
                 setRepos(response.data);
                 const reposFilteredByTag = response.data.filter(repo => 
                     {
-                        console.log(repo.topics);
+                        console.log('Repo: ', repo.html_url);
                         return repo.topics.includes('portfolio')
                     }
                 );
