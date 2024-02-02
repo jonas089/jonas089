@@ -4,7 +4,6 @@ import axios from 'axios';
 const GitHubActivity = () => {
     const username = 'jonas089';
     const contributionImageUrl = `https://ghchart.rshah.org/${username}`;
-  
     return (
     <div className='pt-10 pb-10 flex flex-col items-center justify-center'>
         <img src={contributionImageUrl} alt="GitHub Contributions" />
@@ -25,7 +24,7 @@ const GitHubProfile = () => {
     const [profile, setProfile] = useState(null);
     const [Repos, setRepos] = useState(null);
     const [filteredRepos, setFilteredRepos] = useState(null);
-
+    const [loading, setLoading] = useState(true);
     useEffect(() => {
         axios.get('https://api.github.com/users/jonas089')
             .then(response => {
@@ -48,10 +47,19 @@ const GitHubProfile = () => {
             .catch(error => {
                 console.log(error);
             });
+            // Set a timeout to ensure a minimum loading time of 1 second
+            const timer = setTimeout(() => {
+                setLoading(false);
+            }, 1000);
+
+            // Cleanup the timer
+            return () => clearTimeout(timer);
     }, []);
 
-    if (!profile || !filteredRepos) {
-        return <div>Loading...</div>;
+    if (loading || !profile || !filteredRepos) {
+        return <div className="flex justify-center items-center h-screen">
+            <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-500"></div>
+        </div>
     }
 
     return (
