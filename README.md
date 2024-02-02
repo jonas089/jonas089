@@ -1,5 +1,1 @@
-# Personal Portfolio website in React
-
-My portfolio :3
-
-
+# Rust Engineer specialized in Applied Cryptography and Distributed Systems.
