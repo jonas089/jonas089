@@ -15,8 +15,13 @@
 
 Location: Switzerland, Zürich
 
+Employment: Casper Association, R&D Engineer
+
+## Click to connect with me:
 [LinkedIn](https://www.linkedin.com/in/jonas-pauli/)
 
+### Click to visit my personal website:
 [Portfolio](https://jonas.software)
 
-[Download CV](https://jonas.software/jonas-pauli-cv.pdf)
+### Click to download my Resume:
+[Download](https://jonas.software/jonas-pauli-cv.pdf)
