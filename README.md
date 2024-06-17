@@ -11,6 +11,8 @@
 - Python
 - Typescript
 
+## Profile
+
 Location: Switzerland, Zürich
 
 [LinkedIn](https://www.linkedin.com/in/jonas-pauli/)
