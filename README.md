@@ -1,11 +1,20 @@
-# Welcome to my Github Profile :) 
+# Blockchain Researcher and Systems Engineer
 
-I am a 23 year old software engineer (self-taught and on-the-job learner) who is specialized in distributed systems, applied cryptography (+ ZK) and Rust.
+## Core Skills
+- Rust
+- Systems Engineering
+- Distributed Systems and Blockchain
+- Cryptography
+- Zero-Knowledge
+
+## Other Languages
+- Python
+- Typescript
 
 Location: Switzerland, Zürich
 
-[Click here to connect with me](https://www.linkedin.com/in/jonas-pauli/)
+[LinkedIn](https://www.linkedin.com/in/jonas-pauli/)
 
-[Click here to visit my website](https://jonas.software)
+[Portfolio](https://jonas.software)
 
-[Click here to download my CV](https://jonas.software/jonas-pauli-cv.pdf)
+[Download CV](https://jonas.software/jonas-pauli-cv.pdf)
