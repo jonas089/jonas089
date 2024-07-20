@@ -25,13 +25,11 @@ const BitcoinPrice = () => {
     }, []);
 
     if (loading || !bitcoinPrice) {
-        return <div className="flex justify-center items-center h-screen">
-            <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-500"></div>
-        </div>
+        return <div />
     }
 
     return (
-        <div className='flex flex-col items-center justify-center bg-black w-3/4'>
+        <div className='flex flex-col items-center justify-center  w-3/4'>
             <h1 className="pt-10 flex items-center text-5xl font-bold bg-gradient-to-r from-emerald-500 to-red-500 text-transparent bg-clip-text">
                 BTC Price: {bitcoinPrice}$
             </h1>

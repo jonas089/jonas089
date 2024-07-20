@@ -5,6 +5,8 @@ import gmail from '../assets/gmail.svg';
 import linkedin from '../assets/linkedin.png';
 import GitHubProfile from '../services/Github';
 import BitcoinPrice from "../services/Coingecko";
+import backgroundImage from '../assets/background.png';
+import './Home.css';
 
 const navigation = {
   social: [
@@ -42,7 +44,7 @@ class Home extends React.Component {
     return (
       <div>
         <div className=''>
-          <div className="flex flex-col items-center justify-center bg-black">
+          <div className="flex flex-col items-center justify-center bg-default">
             {/* 
               Candidate information and Links
             */}
@@ -66,7 +68,7 @@ class Home extends React.Component {
             <h1 className="pb-10 pt-10 flex items-center text-5xl font-bold bg-gradient-to-r from-emerald-500 to-blue-500 text-transparent bg-clip-text">
               Articles
             </h1>
-            <div className='flex flex-col items-center justify-center bg-black w-3/4'>
+            <div className='flex flex-col items-center justify-center  w-3/4'>
               <ul className="list-none w-full">
                 {articles.map((article, index) => (
                   <li key={index} className="mb-4">
