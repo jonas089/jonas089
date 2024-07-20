@@ -50,6 +50,8 @@ class Home extends React.Component {
             */}
             <BitcoinPrice />
             <br />
+            <h1 className='text-xl bg-black text-white px-10 py-10'>The background of this Website shows my own implementation of Finite Field arithmetic for Elliptic Curves in Rust.</h1>
+            <br />
             <div className='px-5 flex flex-col items-center justify-center flex-auto overflow-hidden rounded-3xl text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 bg-gradient-to-r from-emerald-500 to-blue-500 w-3/4'>
               <br />
               <p className='text-xl font-bold'>Experienced Rust Engineer specialized in Systems Design & Cryptography</p>
