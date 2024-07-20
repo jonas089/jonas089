@@ -1,12 +1,10 @@
 import React from 'react';
-import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline';
-import casper from '../assets/casper.png';
-import profile from '../assets/profile.jpeg';
 import github from '../assets/github.png';
 import medium from '../assets/medium.png';
 import gmail from '../assets/gmail.svg';
 import linkedin from '../assets/linkedin.png';
 import GitHubProfile from '../services/Github';
+import BitcoinPrice from "../services/Coingecko";
 
 const navigation = {
   social: [
@@ -14,21 +12,21 @@ const navigation = {
       name: 'GitHub',
       href: 'https://github.com/jonas089',
       icon: (props) => (
-        <img src={github} className='w-16 h-16'></img>
+        <img alt="Github" src={github} className='w-16 h-16'></img>
       ),
     },
     {
       name: 'LinkedIn',
       href: 'https://www.linkedin.com/in/jonas-pauli-a6ba38233/',
       icon: (props) => (
-        <img src={linkedin} className='w-16 h-16'></img>
+        <img alt="LinkedIn" src={linkedin} className='w-16 h-16'></img>
       ),
     },
     {
       name: 'Gmail',
       href: 'mailto:jonas089@gmail.com?subject=Hello&body=World!%3F',
       icon: (props) => (
-        <img src={gmail} className='w-16 h-16'></img>
+        <img alt="Gmail" src={gmail} className='w-16 h-16'></img>
       ),
     },
   ],
@@ -48,9 +46,8 @@ class Home extends React.Component {
             {/* 
               Candidate information and Links
             */}
-            <h1 className="pb-10 pt-10 flex items-center text-5xl font-bold bg-gradient-to-r from-emerald-500 to-blue-500 text-transparent bg-clip-text">
-              Jonas Pauli
-            </h1>
+            <BitcoinPrice />
+            <br />
             <div className='px-5 flex flex-col items-center justify-center flex-auto overflow-hidden rounded-3xl text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 bg-gradient-to-r from-emerald-500 to-blue-500 w-3/4'>
               <br />
               <p className='text-xl font-bold'>Experienced Rust Engineer specialized in Systems Design & Cryptography</p>
@@ -60,9 +57,9 @@ class Home extends React.Component {
               <div className='flex justify-center w-1/2 pb-5'>
                 <a href='https://github.com/jonas089' className='border border-black text-black rounded-md px-10 py-2 transition-colors duration-300 hover:bg-blue-500 hover:text-black'>Github</a>
                 <a href='https://www.linkedin.com/in/jonas-pauli/' className='ml-4 border border-black text-black rounded-md px-10 py-2 transition-colors duration-300 hover:bg-blue-500 hover:text-black'>LinkedIn</a>
-              </div>      
+              </div>
             </div>
-            <GitHubProfile/>
+            <GitHubProfile />
             {/* 
               Medium articles - R&D
             */}
@@ -72,13 +69,13 @@ class Home extends React.Component {
             <div className='flex flex-col items-center justify-center bg-black w-3/4'>
               <ul className="list-none w-full">
                 {articles.map((article, index) => (
-                      <li key={index} className="mb-4">
-                          <a href={article.href} className="block bg-gradient-to-r from-emerald-500 to-blue-500 rounded-lg shadow-md p-4">
-                              <h1 style={{ fontFamily: "'Roboto Slab', cursive", textTransform: "uppercase" }} className='text-black text-xl'>{article.name}</h1>
-                              <p className='text-gray-700'>{article.description}</p>
-                          </a>
-                      </li>
-                  ))}
+                  <li key={index} className="mb-4">
+                    <a href={article.href} className="block bg-gradient-to-r from-emerald-500 to-blue-500 rounded-lg shadow-md p-4">
+                      <h1 style={{ fontFamily: "'Roboto Slab', cursive", textTransform: "uppercase" }} className='text-black text-xl'>{article.name}</h1>
+                      <p className='text-gray-700'>{article.description}</p>
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -89,7 +86,7 @@ class Home extends React.Component {
               Documents
             </h1>
             <div className='flex flex-col items-center justify-center bg-gradient-to-r from-emerald-500 to-blue-500 rounded-lg shadow-md p-4 mb-4 w-3/4'>
-              <a className='py-3 px-3 border border-emerald-900 rounded-md hover:bg-blue-500' href="/jonas-pauli-cv.pdf" download="jonas-pauli-cv.pdf">Download CV</a> 
+              <a className='py-3 px-3 border border-emerald-900 rounded-md hover:bg-blue-500' href="/jonas-pauli-cv.pdf" download="jonas-pauli-cv.pdf">Download CV</a>
             </div>
 
           </div>

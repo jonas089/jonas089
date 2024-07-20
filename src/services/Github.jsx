@@ -5,24 +5,24 @@ const GitHubActivity = () => {
     const username = 'jonas089';
     const contributionImageUrl = `https://ghchart.rshah.org/${username}`;
     return (
-    <div className='pt-10 pb-10 flex flex-col items-center justify-center'>
-        <img src={contributionImageUrl} alt="GitHub Contributions" />
-        <p style={{ 
-            fontFamily: "'Roboto Slab', serif", // Use serif instead of cursive for Roboto Slab
-            fontSize: '1.2em', // Larger font size
-            fontWeight: 'bold', // Make it bold
-            textAlign: 'center' // Center align the text if needed
-            }} 
-            className='text-gray-700'>
-            Activity Monitor
-        </p>
-    </div>
+        <div className='pt-10 pb-10 flex flex-col items-center justify-center'>
+            <img src={contributionImageUrl} alt="GitHub Contributions" />
+            <p style={{
+                fontFamily: "'Roboto Slab', serif", // Use serif instead of cursive for Roboto Slab
+                fontSize: '1.2em', // Larger font size
+                fontWeight: 'bold', // Make it bold
+                textAlign: 'center' // Center align the text if needed
+            }}
+                className='text-gray-700'>
+                Activity Monitor
+            </p>
+        </div>
     );
 };
 
 const GitHubProfile = () => {
     const [profile, setProfile] = useState(null);
-    const [Repos, setRepos] = useState(null);
+    //const [Repos, setRepos] = useState(null);
     const [filteredRepos, setFilteredRepos] = useState(null);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
@@ -35,25 +35,24 @@ const GitHubProfile = () => {
             });
         axios.get('https://api.github.com/users/jonas089/repos?per_page=60')
             .then(response => {
-                setRepos(response.data);
-                const reposFilteredByTag = response.data.filter(repo => 
-                    {
-                        console.log('Repo: ', repo.html_url);
-                        return repo.topics.includes('portfolio')
-                    }
+                //setRepos(response.data);
+                const reposFilteredByTag = response.data.filter(repo => {
+                    console.log('Repo: ', repo.html_url);
+                    return repo.topics.includes('portfolio')
+                }
                 );
                 setFilteredRepos(reposFilteredByTag);
             })
             .catch(error => {
                 console.log(error);
             });
-            // Set a timeout to ensure a minimum loading time of 1 second
-            const timer = setTimeout(() => {
-                setLoading(false);
-            }, 1000);
+        // Set a timeout to ensure a minimum loading time of 1 second
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 1000);
 
-            // Cleanup the timer
-            return () => clearTimeout(timer);
+        // Cleanup the timer
+        return () => clearTimeout(timer);
     }, []);
 
     if (loading || !profile || !filteredRepos) {
@@ -65,10 +64,10 @@ const GitHubProfile = () => {
     return (
         <div className='flex flex-col items-center justify-center bg-black w-3/4'>
             <h1 className="pt-10 flex items-center text-5xl font-bold bg-gradient-to-r from-emerald-500 to-blue-500 text-transparent bg-clip-text">
-              Github
-              <img src={profile.avatar_url} alt="Profile" className="w-30 h-16 ml-10 rounded-full" />
+                Github
+                <img src={profile.avatar_url} alt="Profile" className="w-30 h-16 ml-10 rounded-full" />
             </h1>
-            <GitHubActivity/>           
+            <GitHubActivity />
             <ul className="list-none w-full">
                 <p style={{ fontFamily: "'Roboto Slab', cursive" }} className='text-white'>Public Repositories: {profile.public_repos}</p>
                 {filteredRepos.map((repo, index) => (

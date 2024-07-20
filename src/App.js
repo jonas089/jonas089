@@ -6,7 +6,7 @@ import "./index.css";
 const App = () => {
   return (
     <Routes>
-        <Route index element={<Home />} />
+      <Route index element={<Home />} />
     </Routes>
   );
 };
