@@ -62,7 +62,7 @@ const GitHubProfile = () => {
     }
 
     return (
-        <div className='flex flex-col items-center justify-center w-3/4'>
+        <div className='flex flex-col items-center justify-center w-3/4 bg-black'>
             <h1 className="pt-10 flex items-center text-5xl font-bold bg-gradient-to-r from-emerald-500 to-blue-500 text-transparent bg-clip-text">
                 Github
                 <img src={profile.avatar_url} alt="Profile" className="w-30 h-16 ml-10 rounded-full" />

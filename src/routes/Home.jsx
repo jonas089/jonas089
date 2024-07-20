@@ -5,7 +5,6 @@ import gmail from '../assets/gmail.svg';
 import linkedin from '../assets/linkedin.png';
 import GitHubProfile from '../services/Github';
 import BitcoinPrice from "../services/Coingecko";
-import backgroundImage from '../assets/background.png';
 import './Home.css';
 
 const navigation = {
@@ -48,10 +47,9 @@ class Home extends React.Component {
             {/* 
               Candidate information and Links
             */}
-            <BitcoinPrice />
-            <br />
-            <h1 className='text-xl bg-black text-white px-10 py-10'>The background of this Website shows my own implementation of Finite Field arithmetic for Elliptic Curves in Rust.</h1>
-            <br />
+            <div className='bg-black flex flex-col items-center justify-center  w-3/4 py-5'>
+              <BitcoinPrice />
+            </div>
             <div className='px-5 flex flex-col items-center justify-center flex-auto overflow-hidden rounded-3xl text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 bg-gradient-to-r from-emerald-500 to-blue-500 w-3/4'>
               <br />
               <p className='text-xl font-bold'>Experienced Rust Engineer specialized in Systems Design & Cryptography</p>
@@ -67,10 +65,12 @@ class Home extends React.Component {
             {/* 
               Medium articles - R&D
             */}
-            <h1 className="pb-10 pt-10 flex items-center text-5xl font-bold bg-gradient-to-r from-emerald-500 to-blue-500 text-transparent bg-clip-text">
-              Articles
-            </h1>
-            <div className='flex flex-col items-center justify-center  w-3/4'>
+            <div className='bg-black flex flex-col items-center justify-center  w-3/4'>
+              <h1 className="pb-10 pt-10 flex items-center text-5xl font-bold bg-gradient-to-r from-emerald-500 to-blue-500 text-transparent bg-clip-text">
+                Articles
+              </h1>
+            </div>
+            <div className='bg-black flex flex-col items-center justify-center  w-3/4'>
               <ul className="list-none w-full">
                 {articles.map((article, index) => (
                   <li key={index} className="mb-4">
@@ -86,13 +86,14 @@ class Home extends React.Component {
             {/* 
               Public documents & downloads - includes the CV as PDF.
             */}
-            <h1 className="pb-10 pt-10 flex items-center text-5xl font-bold bg-gradient-to-r from-emerald-500 to-blue-500 text-transparent bg-clip-text">
-              Documents
-            </h1>
-            <div className='flex flex-col items-center justify-center bg-gradient-to-r from-emerald-500 to-blue-500 rounded-lg shadow-md p-4 mb-4 w-3/4'>
-              <a className='py-3 px-3 border border-emerald-900 rounded-md hover:bg-blue-500' href="/jonas-pauli-cv.pdf" download="jonas-pauli-cv.pdf">Download CV</a>
+            <div className='bg-black flex flex-col items-center justify-center  w-3/4'>
+              <h1 className="pb-10 pt-10 flex items-center text-5xl font-bold bg-gradient-to-r from-emerald-500 to-blue-500 text-transparent bg-clip-text">
+                Documents
+              </h1>
+              <div className='flex flex-col items-center justify-center bg-gradient-to-r from-emerald-500 to-blue-500 rounded-lg shadow-md p-4 mb-4 w-3/4'>
+                <a className='py-3 px-3 border border-emerald-900 rounded-md hover:bg-blue-500' href="/jonas-pauli-cv.pdf" download="jonas-pauli-cv.pdf">Download CV</a>
+              </div>
             </div>
-
           </div>
         </div>
 
@@ -100,8 +101,8 @@ class Home extends React.Component {
         {/* 
           Footer and contacts
         */}
-        <footer className="bg-black">
-          <div className="mx-auto max-w-7xl overflow-hidden px-6 py sm:py lg:px-8">
+        <footer className="bg-default">
+          <div className="bg-black mx-auto max-w-7xl overflow-hidden px-6 py sm:py lg:px-8">
             <div className="mt-10 pb-10 flex justify-center space-x-10">
               {navigation.social.map((item) => (
                 <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
@@ -112,7 +113,6 @@ class Home extends React.Component {
             </div>
           </div>
         </footer>
-
       </div>
     );
   }
