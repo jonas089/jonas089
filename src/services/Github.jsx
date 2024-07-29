@@ -13,7 +13,7 @@ const GitHubActivity = () => {
                 fontWeight: 'bold', // Make it bold
                 textAlign: 'center' // Center align the text if needed
             }}
-                className='text-gray-700'>
+                className='text-white-700'>
                 Activity Monitor
             </p>
         </div>
@@ -57,13 +57,13 @@ const GitHubProfile = () => {
 
     if (loading || !profile || !filteredRepos) {
         return <div className="flex justify-center items-center h-screen">
-            <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-500"></div>
+            <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-red-500"></div>
         </div>
     }
 
     return (
         <div className='flex flex-col items-center justify-center w-3/4 bg-black'>
-            <h1 className="pt-10 flex items-center text-5xl font-bold bg-gradient-to-r from-emerald-500 to-blue-500 text-transparent bg-clip-text">
+            <h1 className="pt-10 flex items-center text-5xl font-bold bg-gradient-to-r from-purple-500 to-red-500 text-transparent bg-clip-text">
                 Github
                 <img src={profile.avatar_url} alt="Profile" className="w-30 h-16 ml-10 rounded-full" />
             </h1>
@@ -72,15 +72,15 @@ const GitHubProfile = () => {
                 <p style={{ fontFamily: "'Roboto Slab', cursive" }} className='text-white'>Public Repositories: {profile.public_repos}</p>
                 {filteredRepos.map((repo, index) => (
                     <li key={index} className="mb-4">
-                        <a href={repo.html_url} className="block bg-gradient-to-r from-emerald-500 to-blue-500 rounded-lg shadow-md p-4">
+                        <a href={repo.html_url} className="block bg-gradient-to-r from-purple-500 to-red-500 rounded-lg shadow-md p-4">
                             <h1 style={{ fontFamily: "'Roboto Slab', cursive", textTransform: "uppercase" }} className='text-black text-xl'>{repo.name}</h1>
-                            <p className='text-gray-700'>{repo.description}</p>
+                            <p className='text-white-700'>{repo.description}</p>
                         </a>
                     </li>
                 ))}
                 <li className="mb-4">
-                    <a href='https://github.com/jonas089?tab=repositories' className="block bg-gradient-to-r from-emerald-500 to-blue-500 rounded-lg shadow-md p-4">
-                        <h1 className='text-blue-900 text-xl'>...</h1>
+                    <a href='https://github.com/jonas089?tab=repositories' className="block bg-gradient-to-r from-purple-500 to-red-500 rounded-lg shadow-md p-4">
+                        <h1 className='text-red-900 text-xl'>...</h1>
                     </a>
                 </li>
             </ul>

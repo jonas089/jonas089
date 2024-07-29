@@ -42,23 +42,23 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <div className=''>
-          <div className="flex flex-col items-center justify-center bg-default">
+        <div className='bg-default flex flex-col items-center justify-center'>
+          <div className="flex flex-col items-center justify-center bg-black w-3/4">
             {/* 
               Candidate information and Links
             */}
             <div className='bg-black flex flex-col items-center justify-center  w-3/4 py-5'>
               <BitcoinPrice />
             </div>
-            <div className='px-5 flex flex-col items-center justify-center flex-auto overflow-hidden rounded-3xl text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 bg-gradient-to-r from-emerald-500 to-blue-500 w-3/4'>
+            <div className='px-5 flex flex-col items-center justify-center flex-auto overflow-hidden rounded-3xl text-sm leading-6 shadow-lg ring-1 ring-white-900/5 bg-gradient-to-r from-purple-500 to-red-500 w-3/4'>
               <br />
               <p className='text-xl font-bold'>Experienced Rust Engineer specialized in Systems Design & Cryptography</p>
               <br />
               <p>Current occupation: R&D Engineer at Casper Association</p>
               <br />
               <div className='flex justify-center w-1/2 pb-5'>
-                <a href='https://github.com/jonas089' className='border border-black text-black rounded-md px-10 py-2 transition-colors duration-300 hover:bg-blue-500 hover:text-black'>Github</a>
-                <a href='https://www.linkedin.com/in/jonas-pauli/' className='ml-4 border border-black text-black rounded-md px-10 py-2 transition-colors duration-300 hover:bg-blue-500 hover:text-black'>LinkedIn</a>
+                <a href='https://github.com/jonas089' className='border border-black text-black rounded-md px-10 py-2 transition-colors duration-300 hover:bg-red-500 hover:text-black'>Github</a>
+                <a href='https://www.linkedin.com/in/jonas-pauli/' className='ml-4 border border-black text-black rounded-md px-10 py-2 transition-colors duration-300 hover:bg-red-500 hover:text-black'>LinkedIn</a>
               </div>
             </div>
             <GitHubProfile />
@@ -66,7 +66,7 @@ class Home extends React.Component {
               Medium articles - R&D
             */}
             <div className='bg-black flex flex-col items-center justify-center  w-3/4'>
-              <h1 className="pb-10 pt-10 flex items-center text-5xl font-bold bg-gradient-to-r from-emerald-500 to-blue-500 text-transparent bg-clip-text">
+              <h1 className="pb-10 pt-10 flex items-center text-5xl font-bold bg-gradient-to-r from-purple-500 to-red-500 text-transparent bg-clip-text">
                 Articles
               </h1>
             </div>
@@ -74,9 +74,9 @@ class Home extends React.Component {
               <ul className="list-none w-full">
                 {articles.map((article, index) => (
                   <li key={index} className="mb-4">
-                    <a href={article.href} className="block bg-gradient-to-r from-emerald-500 to-blue-500 rounded-lg shadow-md p-4">
+                    <a href={article.href} className="block bg-gradient-to-r from-purple-500 to-red-500 rounded-lg shadow-md p-4">
                       <h1 style={{ fontFamily: "'Roboto Slab', cursive", textTransform: "uppercase" }} className='text-black text-xl'>{article.name}</h1>
-                      <p className='text-gray-700'>{article.description}</p>
+                      <p className='text-white-700'>{article.description}</p>
                     </a>
                   </li>
                 ))}
@@ -87,32 +87,27 @@ class Home extends React.Component {
               Public documents & downloads - includes the CV as PDF.
             */}
             <div className='bg-black flex flex-col items-center justify-center  w-3/4'>
-              <h1 className="pb-10 pt-10 flex items-center text-5xl font-bold bg-gradient-to-r from-emerald-500 to-blue-500 text-transparent bg-clip-text">
+              <h1 className="pb-10 pt-10 flex items-center text-5xl font-bold bg-gradient-to-r from-purple-500 to-red-500 text-transparent bg-clip-text">
                 Documents
               </h1>
-              <div className='flex flex-col items-center justify-center bg-gradient-to-r from-emerald-500 to-blue-500 rounded-lg shadow-md p-4 mb-4 w-3/4'>
-                <a className='py-3 px-3 border border-emerald-900 rounded-md hover:bg-blue-500' href="/jonas-pauli-cv.pdf" download="jonas-pauli-cv.pdf">Download CV</a>
+              <div className='flex flex-col items-center justify-center bg-gradient-to-r from-purple-500 to-red-500 rounded-lg shadow-md p-4 mb-4 w-full'>
+                <a className='py-3 px-3 border border-purple-900 rounded-md hover:bg-red-500' href="/jonas-pauli-cv.pdf" download="jonas-pauli-cv.pdf">Download CV</a>
               </div>
             </div>
+            <footer className="bg-black">
+              <div className="mx-auto max-w-7xl overflow-hidden px-6 py sm:py lg:px-8">
+                <div className="mt-10 pb-10 flex justify-center space-x-10">
+                  {navigation.social.map((item) => (
+                    <a key={item.name} href={item.href} className="text-white-400 hover:text-white-500">
+                      <span className="sr-only">{item.name}</span>
+                      <item.icon className="h-6 w-6" aria-hidden="true" />
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </footer>
           </div>
         </div>
-
-
-        {/* 
-          Footer and contacts
-        */}
-        <footer className="bg-default">
-          <div className="bg-black mx-auto max-w-7xl overflow-hidden px-6 py sm:py lg:px-8">
-            <div className="mt-10 pb-10 flex justify-center space-x-10">
-              {navigation.social.map((item) => (
-                <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
-                  <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-6 w-6" aria-hidden="true" />
-                </a>
-              ))}
-            </div>
-          </div>
-        </footer>
       </div>
     );
   }

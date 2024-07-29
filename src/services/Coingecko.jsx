@@ -30,8 +30,8 @@ const BitcoinPrice = () => {
 
     return (
         <div className='flex flex-col items-center justify-center  w-3/4'>
-            <h1 className="pt-10 flex items-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-emerald-500 to-red-500 text-transparent bg-clip-text">
-                BTC Price: {bitcoinPrice}$
+            <h1 className="pt-10 flex items-center text-2xl sm:text-3xl md:text-3xl lg:text-3xl font-bold bg-gradient-to-r from-red-500 to-purple-500 text-transparent bg-clip-text">
+                Bitcoin Price: {bitcoinPrice}$
             </h1>
         </div>
     );
