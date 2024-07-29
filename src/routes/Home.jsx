@@ -43,7 +43,7 @@ class Home extends React.Component {
     return (
       <div>
         <div className='bg-default flex flex-col items-center justify-center'>
-          <div className="flex flex-col items-center justify-center bg-black w-3/4">
+          <div className="flex flex-col items-center justify-center bg-black w-full md:w-3/4">
             {/* 
               Candidate information and Links
             */}
