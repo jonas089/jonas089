@@ -42,8 +42,8 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <div className='bg-default flex flex-col items-center justify-center'>
-          <div className="flex flex-col items-center justify-center bg-black w-full md:w-3/4">
+        <div className='bg-default flex flex-col items-center justify-center bg-center'>
+          <div className="flex flex-col items-center justify-center bg-black w-full md:w-1/2">
             {/* 
               Candidate information and Links
             */}
@@ -108,7 +108,7 @@ class Home extends React.Component {
             </footer>
           </div>
         </div>
-      </div>
+      </div >
     );
   }
 }
