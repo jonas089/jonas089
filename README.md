@@ -1,4 +1,4 @@
-![Jonas Pauli's GitHub stats](https://github-readme-stats.vercel.app/api?username=jonas089&show=reviews,prs_merged,prs_merged_percentage)
+![Jonas Pauli's GitHub stats](https://github-readme-stats.vercel.app/api?username=jonas089&show=reviews,prs_merged,prs_merged_percentage&icons=true&theme=radical)
 
 
 # Blockchain Researcher and Systems Engineer
