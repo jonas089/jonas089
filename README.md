@@ -1,3 +1,6 @@
+![Jonas Pauli's GitHub stats](https://github-readme-stats.vercel.app/api?username=jonas089&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage)
+
+
 # Blockchain Researcher and Systems Engineer
 Hello World, my name is Jonas Pauli and I am a research engineer from Germany (Munich) living in Switzerland (Zurich).
 
