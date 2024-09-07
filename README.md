@@ -16,8 +16,8 @@ Hello World, my name is Jonas Pauli and I am a research engineer from Germany (M
 - Typescript
 
 ## Experience
-- R&D Engineer at Casper Association (since 2022)
-- R&D Assistant at Casper Association (2022)
+- R&D Engineer at Casper Association (since 11.2022-09.2024)
+- R&D Assistant at Casper Association (07.2022-10.2022)
 
 ## Click to connect with me:
 [LinkedIn](https://www.linkedin.com/in/jonas-pauli/)
