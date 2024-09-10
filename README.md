@@ -7,6 +7,7 @@ Hello World, my name is Jonas Pauli and I am a research engineer from Germany (M
 - Distributed Systems and Blockchain
 - Cryptography
 - Zero-Knowledge
+- Functional React (with Tailwind)
 
 ## Other Languages
 - Python
