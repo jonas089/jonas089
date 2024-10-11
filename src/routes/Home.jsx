@@ -54,7 +54,7 @@ class Home extends React.Component {
               <br />
               <p className='text-xl font-bold'>Experienced Rust Engineer specialized in Systems Design & Cryptography</p>
               <br />
-              <p>Current occupation: R&D Engineer at Casper Association</p>
+              <p>Current occupation: Senior Blockchain & ZK Engineer @ Chainsafe Systems</p>
               <br />
               <div className='flex justify-center w-1/2 pb-5'>
                 <a href='https://github.com/jonas089' className='border border-black text-black rounded-md px-10 py-2 transition-colors duration-300 hover:bg-red-500 hover:text-black'>Github</a>
