@@ -14,7 +14,7 @@ Hello World, my name is Jonas Pauli and I am a research engineer from Germany (M
 - Typescript
 
 ## Experience
-- ZK Engineer at Chainsafe Systems (10.2024-now)
+- ZK Engineer at Chainsafe Systems (10.2024-03.2025)
 - R&D Engineer at Casper Association (11.2022-09.2024)
 - R&D Assistant at Casper Association (07.2022-10.2022)
 
