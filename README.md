@@ -13,18 +13,31 @@
 - Python
 - Typescript
 
-## Experience
-- Founder of [Ciphercurve LLC](https://ciphercurve.com)
--- Engagement with Timewave Computer to build Valence, an interchain ZK development stack
-- ZK Engineer at Chainsafe Systems (10.2024-03.2025)
--- Worked on storage proofs for EVM chains and L2s like Optimism, Arbitrum
--- Developed spectre-rad, an optimized ZKVM-friendly light client
--- Won a 10,000$ hackathon (2nd place) with AlignedLayer
-- R&D Engineer at Casper Association (11.2022-09.2024)
--- Member of a core team developing Kairos, a POC for the first Casper L2
-- R&D Assistant at Casper Association (07.2022-10.2022)
--- Developed Dapps and Rust Smart Contracts for the Casper Ecosystem
--- Published Medium articles on Blockchain and Cryptography
+## 🛠 Experience
+
+### Founder — [Ciphercurve LLC](https://ciphercurve.com)
+*Ongoing*
+
+- Collaborated with Timewave Computer to build **Valence**, an interchain ZK development stack.
+
+### ZK Engineer — ChainSafe Systems  
+*Oct 2024 – Mar 2025*
+
+- Built storage proof systems for EVM chains and L2s including **Optimism** and **Arbitrum**.
+- Developed **spectre-rad**, a ZKVM-optimized light client.
+- Won 2nd place ($10,000 prize) at an Aligned Layer hackathon.
+
+### R&D Engineer — Casper Association  
+*Nov 2022 – Sep 2024*
+
+- Core contributor to **Kairos**, a proof-of-concept L2 on the Casper network.
+
+### R&D Assistant — Casper Association  
+*Jul 2022 – Oct 2022*
+
+- Developed dApps and Rust-based smart contracts for the Casper ecosystem.
+- Published educational content on blockchain and cryptography on Medium.
+
 
 ## Click to connect with me:
 [LinkedIn](https://www.linkedin.com/in/jonas-pauli/)
