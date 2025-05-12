@@ -6,6 +6,8 @@
 - Distributed Systems and Blockchain
 - Cryptography
 - Zero-Knowledge
+- ECC
+- STARKs
 
 ## Other Languages
 - Python
