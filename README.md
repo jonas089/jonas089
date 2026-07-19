@@ -16,7 +16,6 @@ I started writing blockchain code in 2015 at the age of 15 and turned it into my
 | Project | Description |
 |---------|-------------|
 | [DISEQ](https://github.com/jonas089/DISEQ) | Distributed sequencer with ZK consensus |
-| [cuda-liquidations](https://github.com/jonas089/cuda-liquidations) | Practicing Cuda without AI: Compute 1 Billion Position Liquidations in 240 ms |
 | [spectre-rad](https://github.com/jonas089/spectre-rad) | Zero Knowledge Ethereum Lightclient in Rust (SP1, Risc0) |
 | [jonas089-snark](https://github.com/jonas089/jonas089-snark) | Elliptic Curve Cryptography and Field Arithmetic from scratch |
 | [articles](https://github.com/jonas089/articles) | Hand-crafted, high-quality technical articles aimed at Engineers |
