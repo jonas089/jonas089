@@ -1,6 +1,6 @@
 # Jonas Pauli
 
-I am a software engineer working on verifiable computation and systems that minimize trust assumptions.
+I am an applied Cryptography and Rust engineer who is passionate about hardware acceleration and circuits.
 
 I started writing distributed systems and applied cryptography code in 2015 at the age of 15 and turned it into my profession in 2022. Currently I work on confidential computation in Rust at [Celestia](https://celestia.org). I am also the founder of [Ciphercurve](https://ciphercurve.com).
 
