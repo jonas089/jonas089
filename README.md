@@ -2,10 +2,10 @@
 
 I am a software engineer working on verifiable computation and systems that minimize trust assumptions.
 
-I started writing blockchain code in 2015 at the age of 15 and turned it into my profession in 2022. Currently I work on confidential computation in Rust at [Celestia](https://celestia.org). I am also the founder of [Ciphercurve](https://ciphercurve.com).
+I started writing distributed systems and applied cryptography code in 2015 at the age of 15 and turned it into my profession in 2022. Currently I work on confidential computation in Rust at [Celestia](https://celestia.org). I am also the founder of [Ciphercurve](https://ciphercurve.com).
 
 ## Highlights
-
+- [Zoda Cuda](https://github.com/jonas089/zoda-cu): cuda accelerated data availability encoding over babybear
 - [RiscPass](https://riscpass.com): digital identity with minimal trust assumptions, built at Ciphercurve
 - [Toyni](https://github.com/jonas089/toyni): DEEP-FRI STARK proof library
 - [toyni-zkvm](https://github.com/jonas089/toyni-zkvm): Minimal ZKVM built on top of Ciphercurve's Toyni
