@@ -18,7 +18,6 @@ I started writing distributed systems and applied cryptography code in 2015 at t
 |---------|-------------|
 | [DISEQ](https://github.com/jonas089/DISEQ) | Distributed sequencer with ZK consensus |
 | [spectre-rad](https://github.com/jonas089/spectre-rad) | Zero Knowledge Ethereum Lightclient in Rust (SP1, Risc0) |
-| [jonas089-snark](https://github.com/jonas089/jonas089-snark) | Elliptic Curve Cryptography and Field Arithmetic from scratch |
 | [articles](https://github.com/jonas089/articles) | Hand-crafted, high-quality technical articles aimed at Engineers |
 
 ## Background
