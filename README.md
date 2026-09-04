@@ -11,14 +11,9 @@ I started writing distributed systems and applied cryptography code in 2015 at t
 - [toyni-zkvm](https://github.com/jonas089/toyni-zkvm): Minimal ZKVM built on top of Ciphercurve's Toyni
 - [celestia-zkevm](https://github.com/celestiaorg/celestia-zkevm) Celestia's ZKEVM for L2 Rollups
 - [Lightwave](https://github.com/jonas089/lightwave): Recursive ZK Light Client operator for Tendermint, Ethereum, ...
-
-## Other projects
-
-| Project | Description |
-|---------|-------------|
-| [DISEQ](https://github.com/jonas089/DISEQ) | Distributed sequencer with ZK consensus |
-| [spectre-rad](https://github.com/jonas089/spectre-rad) | Zero Knowledge Ethereum Lightclient in Rust (SP1, Risc0) |
-| [articles](https://github.com/jonas089/articles) | Hand-crafted, high-quality technical articles aimed at Engineers |
+- [DISEQ](https://github.com/jonas089/DISEQ): Distributed sequencer with ZK consensus
+- [spectre-rad](https://github.com/jonas089/spectre-rad): Zero Knowledge Ethereum Lightclient in Rust (SP1, Risc0)
+- [articles](https://github.com/jonas089/articles): Hand-crafted, high-quality technical articles aimed at Engineers
 
 ## Background
 
